@@ -43,11 +43,9 @@ class MainActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch {
 
             val response = repository.getPosts()
-            val responseBody = response.bodyAsText()
-            val postList: List<PostModel> = Json.decodeFromString(responseBody)
 
             withContext(Dispatchers.Main) {
-                recyclerAdapter.submitList(postList)
+                recyclerAdapter.submitList(response)
             }
         }
     }

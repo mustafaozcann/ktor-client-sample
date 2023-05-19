@@ -3,16 +3,13 @@ package com.mzcn.ktorclientsample
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.mzcn.ktorclientsample.databinding.ActivityMainBinding
-import com.mzcn.ktorclientsample.network.dto.PostModel
 import com.mzcn.ktorclientsample.repository.RemoteRepository
 import com.mzcn.ktorclientsample.ui.adapter.PostListAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import io.ktor.client.statement.bodyAsText
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import kotlinx.serialization.json.Json
 import javax.inject.Inject
 
 @AndroidEntryPoint

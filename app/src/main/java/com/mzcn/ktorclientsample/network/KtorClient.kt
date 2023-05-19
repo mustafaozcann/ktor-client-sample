@@ -8,7 +8,6 @@ import io.ktor.http.ContentType
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
-
 object KtorClient {
 
     val httpClient = HttpClient(Android) {

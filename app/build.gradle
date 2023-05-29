@@ -37,7 +37,15 @@ android {
     kapt {
         correctErrorTypes = true
     }
+    kotlin {
+        sourceSets {
+            all {
+                languageSettings.optIn("io.ktor.util.InternalAPI")
+            }
+        }
+    }
 }
+
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
     kotlinOptions {

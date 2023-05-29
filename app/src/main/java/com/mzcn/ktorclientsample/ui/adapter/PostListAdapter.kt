@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import com.mzcn.ktorclientsample.databinding.ItemRecyclerRowBinding
-import com.mzcn.ktorclientsample.network.dto.PostModel
+import com.mzcn.ktorclientsample.network.model.Post
 
-class PostListAdapter : ListAdapter<PostModel, PostModelViewHolder>(PostListDiffCallback()) {
+class PostListAdapter : ListAdapter<Post, PostModelViewHolder>(PostListDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostModelViewHolder {
         return PostModelViewHolder(
